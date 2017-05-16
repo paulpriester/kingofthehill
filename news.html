@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<title>King Of The Hill</title>
 	<style type="text/css">
 		body {
@@ -45,7 +46,8 @@
   		      bottom: -10;
               left: 0;
               padding: ;
-              background-color:;
+              color:black;
+              background-color: black;
               text-align: center;
 
 
@@ -55,7 +57,6 @@
 		    display: inline;
 		    font-size: 20px;
 		     padding: 17px 23px;
-
 		}
 
 		.subnav a{
@@ -88,26 +89,73 @@
   			<a href="">Search</a>
 		</div>
 
-		<div class="subnav">
+		<!-- <div class="subnav">
 			<a class="active" href="">Xbox</a>
 			<a href="">PS4</a>
 			<a href="">Nintendo</a>
 			<a href="">PC</a>
-		</div>
-		<div class="videos" onload="mutedVideo()">
-			<p>Youtube</p>
-			<iframe width="400" height="250" src="https://www.youtube.com/embed/2qdySjUV8tk" frameborder="0" allowfullscreen></iframe>
-			<iframe width="400" height="250" src="https://www.youtube.com/embed/AbwhiBBWfuE" frameborder="0" allowfullscreen></iframe>
-			<iframe width="400" height="250" src="https://www.youtube.com/embed/AuqwWkFLlCI" frameborder="0" allowfullscreen></iframe>
-			<p>Twitch</p>
-			<iframe src="https://player.twitch.tv/?channel=riotgames" frameborder="0" allowfullscreen="true" scrolling="no" height="200" width="400"></iframe><a href="https://www.twitch.tv/riotgames?tt_medium=live_embed&tt_content=text_link" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px; text-decoration:underline;">
+		</div> -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-4 col-md-3 col-sm-6 col-xs-12"> 
+					<h4><a href="#PS4" data-toggle="collapse"> PS4</a></h4>
+					<div id="PS4" class="collapse"> <!-- "collapse in" makes it show when the page loads "collapse" the content is hidden -->
 
-		</div>
-
-
+		<div class="container">
+			<div class="row">
 
 		
+				<div class="col-lg-4 col-md-3 col-sm-6 col-xs-12"> 
+					<h4>Youtube</h4>
+		 		<iframe width="350" height="250" src="https://www.youtube.com/embed/2qdySjUV8tk" frameborder="0" allowfullscreen></iframe>
+				<iframe width="350" height="250" src="https://www.youtube.com/embed/AbwhiBBWfuE" frameborder="0" allowfullscreen></iframe>
+				<iframe width="350" height="250" src="https://www.youtube.com/embed/AuqwWkFLlCI" frameborder="0" allowfullscreen></iframe>
+				</div>
 
+				<div class="col-lg-4 col-md-3 col-sm-6 col-xs-12"> 
+					<h4>Twitch</h4>
+		 		<iframe src="https://player.twitch.tv/?channel=riotgames" frameborder="0" allowfullscreen="true" scrolling="no" height="200" width="350"></iframe>
+
+				</div>
+			</div>
+		</div>
+		
+		
+			</div>
+			</div>
+		</div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-4 col-md-3 col-sm-6 col-xs-12"> 
+					<h4><a href="#Xbox" data-toggle="collapse"> Xbox</a></h4>
+					<div id="Xbox" class="collapse"> <!-- "collapse in" makes it show when the page loads "collapse" the content is hidden -->
+
+		<div class="container">
+			<div class="row">
+
+		
+				<div class="col-lg-4 col-md-3 col-sm-6 col-xs-12"> 
+					<h4>Youtube</h4>
+		 		<iframe width="350" height="250" src="https://www.youtube.com/embed/2qdySjUV8tk" frameborder="0" allowfullscreen></iframe>
+				<iframe width="350" height="250" src="https://www.youtube.com/embed/AbwhiBBWfuE" frameborder="0" allowfullscreen></iframe>
+				<iframe width="350" height="250" src="https://www.youtube.com/embed/AuqwWkFLlCI" frameborder="0" allowfullscreen></iframe>
+				</div>
+
+				<div class="col-lg-4 col-md-3 col-sm-6 col-xs-12"> 
+					<h4>Twitch</h4>
+		 		<iframe src="https://player.twitch.tv/?channel=riotgames" frameborder="0" allowfullscreen="true" scrolling="no" height="200" width="350"></iframe>
+
+				</div>
+			</div>
+		</div>
+		
+		
+			</div>
+			</div>
+		</div>
+		</div>
 		<div class="footer">
 		 <a href>Support</a>
 		 <a href>Contact us</a>
@@ -117,5 +165,7 @@
 		</div>
 
 	<script src="index.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>		
 	</body>
 </html>
