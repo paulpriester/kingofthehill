@@ -67,6 +67,15 @@
 		     padding: 17px 23px;
 
 		}
+    #loginBox {
+        display:none;
+        position:absolute;
+        z-index: 10;
+        height: 200px;
+        width: 200px;
+        top: 30px;
+        right: -20px;
+    }
 
 		/*.container #myCarousel {
 			height: 30px;
@@ -76,7 +85,7 @@
 	<body>
 		<div class= "header">
 			<h1 style="text-align: left; display: inline-block;">King Of The Hill</h1>
-			<p style="float: right; display: inline-block;">Sign in/Log in</p>
+			<button class="btn-primary" style="float: right; display: inline-block;" onclick="showLoginBox()";>Sign in/Log in</button>
 
 		</div>
 
@@ -96,7 +105,9 @@
   			<a href=""><img src= "https://www.airfieldresearchgroup.org.uk/images/icons/forum-icon.png"></a>
   			<a href=""><img src= "http://www.freeiconspng.com/uploads/agent-cia-fbi-nsa-spy-stag-sweeper-undercover-icon--icon--9.png"></a>
 		</div> -->
-
+    <div id="loginBox">
+      <input type="email" placeholder="Your Email"><input type="password" placeholder="Your Password"><input type="Submit">
+    </div>
 		<div class="container-fluid">
   
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -166,6 +177,8 @@
 
 		</div> -->
 
-			
+  	<script type="text/javascript">
+       function showLoginBox() { document.getElementById('loginBox').style.display = 'block'; }
+    </script>
 	</body>
 </html>
