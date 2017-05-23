@@ -29,7 +29,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">News <span class="sr-only">(current)</span></a></li>
+        <li class="active"><a href="#">Streams <span class="sr-only">(current)</span></a></li>
         <li><a href="#">Tournaments</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -58,21 +58,24 @@
 
 
 
-<div class="container">
-<ul class="nav nav-pills">
-<li class="active"><a href="#">Xbox</a></li>
-<li><a href="#">ps4</a></li>
-<!-- <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Flash<span class="caret"></span></a>
-<ul class="dropdown-menu">
-	<li class="disabled"><a href="#">dddfdfdf</a></li>
-	<li><a data-toggle="tab" href="#">aaa</a></li>
-</ul>
-</li> -->
-</div>
 
-<div class="tab-content">
-	<div id="Xbox" class="tab-pane fade in active">
-		<div class="container">
+<div class="container"><h1>Tournament streams</h1></div>
+<div id="exTab1" class="container">	
+<ul  class="nav nav-pills">
+			<li class="active">
+        <a  href="#1a" data-toggle="tab">Xbox</a>
+			</li>
+			<li><a href="#2a" data-toggle="tab">PS4</a>
+			</li>
+			<li><a href="#3a" data-toggle="tab">PC</a>
+			</li>
+  		<li><a href="#4a" data-toggle="tab">Nintendo</a>
+			</li>
+		</ul>
+
+			<div class="tab-content clearfix">
+			  <div class="tab-pane active" id="1a">
+          <div class="container">
 			<div class="row">
 
 		
@@ -90,23 +93,39 @@
 				</div>
 			</div>
 		</div>
-		
-	</div>
-
-	<div id="ps4" class="tab-pane fade in active">
-		<div class="container">
+				</div>
+				<div class="tab-pane" id="2a">
+          <div class="container">
 			<div class="row">
 
 		
-				<p>dffjfjfjfjjjfjfjfjfjf</p>
-
-				
+				<div class="col-lg-4 col-md-3 col-sm-6 col-xs-12"> 
+					<h4>Youtube</h4>
+		 		<iframe width="350" height="250" src="https://www.youtube.com/embed/2qdySjUV8tk" frameborder="0" allowfullscreen></iframe>
+				<iframe width="350" height="250" src="https://www.youtube.com/embed/AbwhiBBWfuE" frameborder="0" allowfullscreen></iframe>
+				<iframe width="350" height="250" src="https://www.youtube.com/embed/AuqwWkFLlCI" frameborder="0" allowfullscreen></iframe>
+				</div>
 			</div>
 		</div>
-		
-	</div>
-</div>
-</div>
+				</div>
+        <div class="tab-pane" id="3a">
+          <h3>We applied clearfix to the tab-content to rid of the gap between the tab and the content</h3>
+				</div>
+          <div class="tab-pane" id="4a">
+          <h3>We use css to change the background color of the content to be equal to the tab</h3>
+				</div>
+			</div>
+  </div>
+
+
+
+
+
+
+
+
+
+
 
 
 

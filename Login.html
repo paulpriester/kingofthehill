@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="Login.css">
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <style type="text/css">
+         
+        </style>
+    </head>
+    <body>
+        
+
+      <form action="index.html" method="post">
+        <h1>Sign Up</h1>
+        <fieldset>
+          <legend><span class="number">1</span>Your basic info</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name">
+          
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="user_email">
+          
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="user_password">
+          
+          <label>Age:</label>
+          <input type="radio" id="under_18" value="under_18" name="user_age"><label for="under_18" class="light">Under 18</label><br>
+          <input type="radio" id="over_18" value="over_18" name="user_age"><label for="over_18" class="light">18 or older</label>
+        </fieldset>
+        <fieldset>
+          <legend><span class="number">2</span>Gamer Profile</legend>
+          <label for="Gamer_Tag">Gamer Tag:</label>
+          <textarea id="Gamer_Tag" name="Gamer_Tag"></textarea>
+          <label for="shoutout">Shout Out:</label>
+          <textarea id="shoutout" name="user_shoutout"></textarea>
+        </fieldset>
+        <fieldset>
+        <label for="System">Game System:</label>
+        <select id="System" name="user_System">
+          <option value="Team_Playstation">Team Playstation</option>
+          <option value="Team_X-Box">Team X-Box</option>
+          <option value="Team_PC">Team PC</option>
+          <option value="Team_Nintendo"> Team Nintendo</option>
+        </select>        
+        </fieldset>
+        <button type="submit">Sign Up</button>
+      </form>
+    </body>
+</html>

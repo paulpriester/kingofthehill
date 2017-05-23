@@ -71,6 +71,11 @@
   			 background-color:white;
   			 text-align: center;
 		}
+
+		body {
+      background-image: url(http://wallpaper-gallery.net/images/gamer-wallpapers/gamer-wallpapers-9.jpg);
+      background-size: cover;
+    }
 	</style>
 </head>
 	<body>
@@ -80,59 +85,70 @@
 
 		</div>
 
-		<div class="topnav">
-  			<!-- <a class="active" href="index.html">Home</a> -->
-  			<a href="#news">News</a>
-  			<a href="">Tournaments</a>
-  			<a href="">Forum</a>
-  			<a href="">Free agent</a>
-  			<a href="">Search</a>
-		</div>
+		<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+    </div>
 
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+       <li><a class="navbar-brand" href="index.html">King of the Hill</li>
+        <li class="active"><a href="#">Streams <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Tournaments</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 		<!-- <div class="subnav">
 			<a class="active" href="">Xbox</a>
 			<a href="">PS4</a>
 			<a href="">Nintendo</a>
 			<a href="">PC</a>
 		</div> -->
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-lg-4 col-md-3 col-sm-6 col-xs-12"> 
-					<h4><a href="#PS4" data-toggle="collapse"> PS4</a></h4>
-					<div id="PS4" class="collapse"> <!-- "collapse in" makes it show when the page loads "collapse" the content is hidden -->
+		<div class="container"><h1 style="color: white;">Tournament streams</h1></div>
+<div id="exTab1" class="container">	
+<ul  class="nav nav-pills">
+			<li class="active">
+        <a  href="#1a" data-toggle="tab">Xbox</a>
+			</li>
+			<li><a href="#2a" data-toggle="tab">PS4</a>
+			</li>
+			<li><a href="#3a" data-toggle="tab">PC</a>
+			</li>
+  		<li><a href="#4a" data-toggle="tab">Nintendo</a>
+			</li>
+		</ul>
 
-		<div class="container">
-			<div class="row">
-
-		
-				<div class="col-lg-4 col-md-3 col-sm-6 col-xs-12"> 
-					<h4>Youtube</h4>
-		 		<iframe width="350" height="250" src="https://www.youtube.com/embed/2qdySjUV8tk" frameborder="0" allowfullscreen></iframe>
-				<iframe width="350" height="250" src="https://www.youtube.com/embed/AbwhiBBWfuE" frameborder="0" allowfullscreen></iframe>
-				<iframe width="350" height="250" src="https://www.youtube.com/embed/AuqwWkFLlCI" frameborder="0" allowfullscreen></iframe>
-				</div>
-
-				<div class="col-lg-4 col-md-3 col-sm-6 col-xs-12"> 
-					<h4>Twitch</h4>
-		 		<iframe src="https://player.twitch.tv/?channel=riotgames" frameborder="0" allowfullscreen="true" scrolling="no" height="200" width="350"></iframe>
-
-				</div>
-			</div>
-		</div>
-		
-		
-			</div>
-			</div>
-		</div>
-		</div>
-
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-lg-4 col-md-3 col-sm-6 col-xs-12"> 
-					<h4><a href="#Xbox" data-toggle="collapse"> Xbox</a></h4>
-					<div id="Xbox" class="collapse"> <!-- "collapse in" makes it show when the page loads "collapse" the content is hidden -->
-
-		<div class="container">
+			<div class="tab-content clearfix">
+			  <div class="tab-pane active" id="1a">
+          <div class="container">
 			<div class="row">
 
 		
@@ -147,6 +163,20 @@
 					<h4>Twitch</h4>
 		 		<iframe src="https://player.twitch.tv/?channel=riotgames" frameborder="0" allowfullscreen="true" scrolling="no" height="200" width="350"></iframe>
 
+				</div>
+			</div>
+		</div>
+				</div>
+				<div class="tab-pane" id="2a">
+          <div class="container">
+			<div class="row">
+
+		
+				<div class="col-lg-4 col-md-3 col-sm-6 col-xs-12"> 
+					<h4>Youtube</h4>
+		 		<iframe width="350" height="250" src="https://www.youtube.com/embed/2qdySjUV8tk" frameborder="0" allowfullscreen></iframe>
+				<iframe width="350" height="250" src="https://www.youtube.com/embed/AbwhiBBWfuE" frameborder="0" allowfullscreen></iframe>
+				<iframe width="350" height="250" src="https://www.youtube.com/embed/AuqwWkFLlCI" frameborder="0" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
