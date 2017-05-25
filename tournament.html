@@ -2,43 +2,17 @@
 <html>
 <head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="Login.css">
 	<title>King Of The Hill</title>
 	<style type="text/css">
 		body {
 			margin: 0px;
 		}
-		.header {
-			color: red;
-			background-color: blue;
-			
-		}
-
-		.topnav {
- 			 overflow: hidden;
-  			 background-color: #333;
-  			 text-align: center;
-		}
-
-		.topnav a {
-			  display: inline-block;
-  			 color: #f2f2f2;
-  			 text-align: center;
-  			 padding: 14px 16px;
-  			 text-decoration: none;
-  			 font-size: 17px;
-  			 width: 12%;
-
-		}			
-
-		.topnav a:hover {
- 			 background-color: #ddd;
- 			 color: black;
-		}
-
-		.topnav a.active {
-    		 background-color: #74d4b3;
-    		 color: white;
-		}
+		 .header {
+          color: red;
+          background-color: rgba(52, 100, 136, 1);
+          
+        }
 
 		.footer {
 			position: absolute;
@@ -53,10 +27,21 @@
 		     padding: 17px 23px;
 
 		}
+
+    body {
+      background-image: url(http://wallpaper-gallery.net/images/gamer-wallpapers/gamer-wallpapers-9.jpg);
+      background-size: contain;
+    }
 	</style>
 </head>
 	<body>
-		<nav class="navbar navbar-default">
+		<div class= "header">
+          <img src="http://i.imgur.com/MY2Tkq7.png">
+          <button type="submit" class="btn btn-warning btn-lg" style="float: right; margin-right: 15px; margin-top: 10px;"><a href="Login.html"; style="float: right; display: inline-block;">Sign up</a>
+            </button>
+        </div>
+    
+<nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -66,26 +51,16 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">King Of The Hill</a>
+      
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Streams<span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Tournaments</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
+          <li><a class="navbar-brand" href="index.html">King of the Hill</li>
+        <li><a href="news.html">Streams<span class="sr-only">(current)</span></a></li>
+        <li><a href="tournament.html">Tournaments</a></li>
+         <li><a href="Forum.html">Forum</a></li>
       </ul>
       <form class="navbar-form navbar-right">
         <div class="form-group">
@@ -97,18 +72,94 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-		<div class="tournaments">
-		<a href=""><img src="http://www.freeiconspng.com/uploads/news-icon-2.png"></a>
-		<a href="">Join Tournament</a>
-		<a href="">Host Tournament</a>
-		</div>
-		<div class="footer">
-		 <a href>Support</a>
-		 <a href>Contact us</a>
-		 <a href>Social Media</a>
+		<div class="container"><h1 style="color: white;">Host or Join Tournaments here</h1></div>
+<div id="exTab1" class="container"> 
+<ul  class="nav nav-pills">
+      <li class="active">
+        <a  href="#1a" data-toggle="tab">Host</a>
+      </li>
+      <li><a href="#2a" data-toggle="tab">Join</a>
+      </li>
+    </ul>
+
+      <div class="tab-content clearfix">
+        <div class="tab-pane active" id="1a">
+         
+       <form action="index.html" method="post">
+        <h1>Host tournament!</h1>
+        <fieldset>
+          <legend style="text-align: center;">Tournament info</legend>
+          <label for="name">Name of tournament:</label>
+          <input type="text" id="name" name="user_name">
+          
+          <label for="mail">Game title:</label>
+          <input type="email" id="mail" name="user_email">
+          
+                  <fieldset>
+        <label for="System">Game System:</label>
+        <select id="System" name="user_System">
+          <option value="Team_Playstation">Team Playstation</option>
+          <option value="Team_X-Box">Team X-Box</option>
+          <option value="Team_PC">Team PC</option>
+          <option value="Team_Nintendo"> Team Nintendo</option>
+        </select>        
+        </fieldset>
+
+        <label for="mail">Prizes:</label>
+          <input type="email" id="mail" name="user_email">
+
+          <label for="mail">Joining fee:</label>
+          <input type="email" id="mail" name="user_email">
+
+        <fieldset>
+          <label for="System">Registration end time:</label>
+            <select id="System" name="user_System">
+              <option value="#">12:00 PM</option>
+              <option value="#">6:00 PM</option>
+              <option value="#">12:00 AM</option>
+              <option value="#"> 6:00 AM</option>
+          </select>        
+        </fieldset>
+
+           
+        <label for="mail">Tournament start time:</label>
+          <input type="email" id="mail" name="user_email">
+          
+         
+      <!--   <fieldset>
+          <legend><span class="number">2</span>Gamer Profile</legend>
+          <label for="Gamer_Tag">Gamer Tag:</label>
+          <textarea id="Gamer_Tag" name="Gamer_Tag"></textarea>
+          <label for="shoutout">Shout Out:</label>
+          <textarea id="shoutout" name="user_shoutout"></textarea>
+        </fieldset>
+        <fieldset>
+        <label for="System">Game System:</label>
+        <select id="System" name="user_System">
+          <option value="Team_Playstation">Team Playstation</option>
+          <option value="Team_X-Box">Team X-Box</option>
+          <option value="Team_PC">Team PC</option>
+          <option value="Team_Nintendo"> Team Nintendo</option>
+        </select>        
+        </fieldset> -->
+        <br>
+        <button type="submit" style="margin-top: 10px;">Sign Up</button>
+      </form>
+        <div class="tab-pane" id="2a">
+      
+    
+    
+      </div>
+      </div>
+    </div>
+    </div>
+    <!-- <div class="footer">
+     <a href>Support</a>
+     <a href>Contact us</a>
+     <a href>Social Media</a>
 
 
-		</div>
+    </div> -->
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>	

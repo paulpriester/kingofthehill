@@ -6,16 +6,17 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script stc="index.js"></script>
 	<title>King Of The Hill</title>
 	<style type="text/css">
 		body {
 			margin: 0px;
 		}
-		.header {
-			color: red;
-			background-color: blue;
-			
-		}
+		 .header {
+          color: red;
+          background-color: rgba(52, 100, 136, 1);
+          
+        }
 
 		
 
@@ -43,33 +44,101 @@
 
 		}
 
-		.carousel-inner {
-			height: 300px;
-		}
+.carousel {
+  height: 392px;
+  margin: 12px;
 
-    .item img {
-      height: 50px;
-      width: 500px;
-      text-align: center;
-    }
+}
+.carousel-inner {
+  overflow: visible;
+}
+.carousel ul {
+  -webkit-transform: translateY(36%);
+  -ms-transform: translateY(36%);
+  transform: translateY(36%);
+  padding-left: 7px;
+}
+.carousel li {
+  float: left;
+  font-size: 13px;
+  margin: 0 3%;
+  text-align: center;
+  width: 20%;
+  list-style-type: none;
+}
+.carousel li:first-child {
+  margin-left: 1%;
+}
+.carousel li:last-child {
+  margin-right: 1%;
+}
+.carousel li {
+  margin: 0 1.64%;
+  width: 30%;
+}
+.carousel img {
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 5px;
+  width: 100%;
+}
+.carousel label {
+  padding: 0;
+  -webkit-transition: all .34s linear;
+  transition: all .34s linear;
+}
+.carousel input[type="radio"] {
+  display: none;
+}
+.carousel input[type="radio"]:checked + label {
+  border-color: transparent;
+  border-radius: 3px;
+  box-shadow: 0 0 20px 0 #7CFC00;
+  cursor: pointer;
+  padding: 0;
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+  -webkit-transition: all .34s linear;
+  transition: all .34s linear;
+  z-index: 2;
+}
+.carousel li:first-child input[type="radio"]:checked + label  {
+  position: relative;
+  -ms-transform: translateX(25%) scale(1.5);
+  -webkit-transform: translateX(25%) scale(1.5);
+  transform: translateX(25%) scale(1.5);
+}
+.carousel li:last-child input[type="radio"]:checked + label  {
+  position: relative;
+  -ms-transform: translateX(-25%) scale(1.5);
+  -webkit-transform: translateX(-25%) scale(1.5);
+  transform: translateX(-25%) scale(1.5);
+}
 
     body {
       background-image: url(http://wallpaper-gallery.net/images/gamer-wallpapers/gamer-wallpapers-9.jpg);
-      background-size: cover;
+      background-size: contain;
     }
 
-    ./*item {
+    .jumbotron {
+      float: center;
       text-align: center;
-    }*/
-		
-		
+    }
+  p {
+    color: white;
+  }
+
 	</style>
 </head>
 	<body>
 
    <div class= "header">
-          <img src="http://i.imgur.com/oFz2iny.png">
-          <a href="Login.html"; style="float: right; display: inline-block;">Sign up</a>
+        <img src="http://i.imgur.com/MY2Tkq7.png">
+            <button type="submit" class="btn btn-warning btn-lg" style="float: right; margin-right: 15px; margin-top: 10px;"><a href="Login.html"; style="float: right; display: inline-block;">Sign up</a>
+            </button>
         </div>
 		
 <nav class="navbar navbar-default">
@@ -89,9 +158,9 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
        <li><a class="navbar-brand" href="index.html">King of the Hill</li>
-        <li class="active"><a href="news.html">Streams<span class="sr-only">(current)</span></a></li>
+        <li><a href="news.html">Streams<span class="sr-only">(current)</span></a></li>
         <li><a href="tournament.html">Tournaments</a></li>
-         <li><a href="#">Forum</a></li>
+         <li><a href="Forum.html">Forum</a></li>
       </ul>
       <form class="navbar-form navbar-right">
         <div class="form-group">
@@ -112,70 +181,74 @@
 		</div> -->
 <div class="container">
   <div class="row">
-  <div class="col-lg-8">
+  <div class="col-lg-8 col-lg-offset-2">
     
   
 
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-       <img src=https://wallpaperbrowse.com/media/images/Dubai-Photos-Images-Oicture-Dubai-Landmarks-800x600.jpg>
-
-      <div class="carousel-caption">
-        <h1>News</h1>
-        <p>get news here!!</p>
+<div id="carousel-thingy" class="carousel slide" data-interval="false">
+     <div class="carousel-inner">
+      <div class="item active">
+       <ul class="reset clearfix">
+        <li class="prod1">
+         <input type="radio" name="product" id="product-1" value="a" checked>
+         <label for="product-1">  
+         <p>Stream</p>
+          <img src=https://assets.vg247.com/current//2016/09/call_of_duty_modern_warfare_remastered_mp_overgrown.jpg style="height: 190px;" alt="...">
+         </label>
+        </li>
+        <li class="prod2">
+         <input type="radio" name="product" id="product-2" value="b">
+         <label for="product-2">  
+         <p>Tournaments</p>
+          <img src=http://gameranx.com/wp-content/uploads/2016/11/overwatch-heroes-background-blizzard-1080x623.png style="height: 190px;" alt="...">
+         </label>
+        </li>
+        <li class="prod3">
+         <input type="radio" name="product" id="product-3" value="c">
+         <label for="product-3">  
+         <P>Forum</P>
+          <img src=https://api.2k.com/images/1643 style="height: 190px;" " alt="...">
+         </label>
+        </li>
+       </ul>
       </div>
+      <!-- <div class="item">
+       <ul class="reset clearfix">
+        <li class="prod1">
+         <input type="radio" name="product" id="product-4" value="d">
+         <label for="product-4">  
+          <img src="http://vignette1.wikia.nocookie.net/batmantheanimatedseries/images/b/b5/The_Penguin.jpg/revision/latest?cb=20130303081132" alt="...">
+         </label>
+        </li>
+        <li class="prod2">
+         <input type="radio" name="product" id="product-5" value="e">
+         <label for="product-5">  
+          <img src="http://vignette2.wikia.nocookie.net/batman/images/c/c7/20s.jpg/revision/latest?cb=20111212234019" alt="...">
+         </label>
+        </li>
+        <li class="prod3">
+         <input type="radio" name="product" id="product-6" value="f">
+         <label for="product-6">  
+          <img src="http://vignette3.wikia.nocookie.net/dcanimated/images/4/46/Batman_Duplicant.png/revision/latest?cb=20100302011547" alt="...">
+         </label>
+        </li>
+       </ul>
+      </div> -->
+     </div>
+     <a class="carousel-control left sprite" href="#carousel-thingy" data-slide="prev"></a>
+     <a class="carousel-control right sprite" href="#carousel-thingy" data-slide="next"></a>
     </div>
 
-    <div class="item">
-    <img src= "http://imavex.vo.llnwd.net/o18/clients/oneorphan/images/Madden/bracketIcon.png" alt="Chicago">      
-    <div class="carousel-caption">
-        <h1>Tournament</h1>
-        <p>hhheee</p>
-      </div>
+
+    <div class="jumbotron">
+    <div class="container">
+    <p>
+      ddfjdljf dfjalffjlief eihgion diofehfefon
+    </p>
+      
     </div>
-
-    <div class="item">
-      <img src= "https://www.airfieldresearchgroup.org.uk/images/icons/forum-icon.png" alt="New York">
-      <div class="carousel-caption">
-        <h1>Forum</h1>
-        <p>eemmm</p>
-      </div>
+      
     </div>
-
-     <div class="item">
-       <img src= "http://www.freeiconspng.com/uploads/agent-cia-fbi-nsa-spy-stag-sweeper-undercover-icon--icon--9.png" alt="Chicago">
-      <div class="carousel-caption">
-        <h1>Free agent</h1>
-        <p>eemmm</p>
-      </div>
-    </div>
-    ...
-  </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-</div>
-    
-  </div>
-</div>
-
 <!-- 
 		<div class="footer">
 		 <a href>Support</a>

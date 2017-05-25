@@ -7,6 +7,8 @@
 body {
   font-family: 'Nunito', sans-serif;
   color: #384047;
+   background-image: url(http://wallpaper-gallery.net/images/gamer-wallpapers/gamer-wallpapers-9.jpg);
+      background-size: contain;
 }
 
 form {
@@ -15,6 +17,7 @@ form {
   padding: 10px 20px;
   background: #f4f7f8;
   border-radius: 8px;
+
 }
 
 h1 {
@@ -34,18 +37,18 @@ input[type="time"],
 input[type="url"],
 textarea,
 select {
-  background: rgba(255,255,255,0.1);
+/*  background: rgba(255,255,255,0.1);
   border: none;
   font-size: 16px;
   height: auto;
   margin: 0;
   outline: 0;
   padding: 15px;
-  width: 100%;
-  background-color: #e8eeef;
+  /*width: 100%;*/
+/*  background-color: #e8eeef;
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-  margin-bottom: 30px;
+  margin-bottom: 30px;*/*/
 }
 
 input[type="radio"],
@@ -67,7 +70,7 @@ button {
   text-align: center;
   font-style: normal;
   border-radius: 5px;
-  width: 100%;
+  /*width: 100%;*/
   border: 1px solid #3ac162;
   border-width: 1px 1px 3px;
   box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
@@ -107,6 +110,9 @@ label.light {
   text-shadow: 0 1px 0 rgba(255,255,255,0.2);
   border-radius: 100%;
 }
+
+
+
 
 @media screen and (min-width: 480px) {
 
